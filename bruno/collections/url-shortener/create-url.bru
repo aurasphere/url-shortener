@@ -1,0 +1,17 @@
+meta {
+  name: Create URL
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/urls
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "url": "https://example2.com"
+  }
+}
